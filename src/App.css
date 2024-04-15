@@ -4,12 +4,10 @@
   margin: 0 auto;
   padding-bottom: 80px;
   overflow-y: auto;
+  border:1px solid #ccc
 }
 h1{
 color:rgba(106, 106, 238, 0.863);
-}
-img{
-  width:100%;
 }
 
 .usergroup {
@@ -38,12 +36,11 @@ img{
 .form {
   width:100%;
   max-width: 800px;
-  border: 1px solid #eee;
   position: fixed;
   bottom: 0;
   max-width: 800px;
+  overflow: hidden;
   margin: 0 auto;
-
   background-color: #eee;
 }
 
@@ -60,6 +57,7 @@ button.btn {
   padding: 10px 20px;
   border-radius: 20px;
 }
+
 input {
   width: 80%;
   padding: 10px;

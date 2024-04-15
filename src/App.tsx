@@ -1,4 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
 
 import './App.css';
 const welcomeMessages = [
@@ -53,8 +55,12 @@ function App() {
       "Why couldn't the bicycle stand up by itself? It was two-tired!",];
       responseMessage = dad[Math.floor(Math.random()*dad.length)]
     }
+    else if(inputText.toLocaleLowerCase() === "no"){
+      responseMessage ="Okay see you next time bye."
+    }
     else{
       responseMessage='I am sorry, I didnt understand. Please choose from pun, programming, or anti.'
+    }
     setMessages([
       ...messages,
       {
@@ -69,7 +75,7 @@ function App() {
     setInputText('');
     console.log('hello');
   };
-}
+
 
   return (
     <>
@@ -84,7 +90,7 @@ function App() {
             >
               {message.user === 'pam' ? (
                 <div className="img user">
-                  <img className="user" src="/images/pam.png" />
+                  <img className="" src="/images/pam.png" />
                 </div>
               ) : (
                 <div className="img bot">
